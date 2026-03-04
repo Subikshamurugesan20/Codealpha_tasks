@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Image Gallery</h1>
+
+<!-- Category Buttons -->
+<div class="buttons">
+  <button onclick="filterImages('all')">All Photos</button>
+  <button onclick="filterImages('camera')">Camera</button>
+  <button onclick="filterImages('screenshots')">Screenshots</button>
+</div>
+
+<div id="gallery" class="gallery"></div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span id="close">×</span>
+  <button id="prev">❮</button>
+  <img id="lightbox-img">
+  <button id="next">❯</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
